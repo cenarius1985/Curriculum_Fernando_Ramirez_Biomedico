@@ -1,0 +1,263 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+\usepackage{ragged2e} 
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Fernando}{Ramírez}{
+\parbox{\textwidth}{\centering
+Ing. Civil Biomédico/Data Science\\
+\texttt{fernando.ramirez.sarmiento@gmail.com}\\
+\texttt{+569 5963 3653}
+}}{white}
+
+
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{Fernando.png}
+\end{center}
+\begin{center}
+\bg{cvgreen}{white}{Acerca de mí}\\[0.5em]
+\end{center}
+\begin{justify}
+{\footnotesize
+Soy un profesional con sólida formación en Biomédica y Ciencia de Datos, especializado en el análisis de imágenes médicas y el desarrollo de algoritmos en múltiples lenguajes de programación. Me caracterizo por ser proactivo, organizado, y orientado a resultados, con una alta capacidad para la investigación, análisis y desarrollo de soluciones innovadoras. Mi enfoque principal se centra en la automatización de procesos mediante la creación de algoritmos eficientes y plataformas web robustas, así como en el manejo y análisis de grandes volúmenes de datos, proporcionando visualizaciones claras y análisis precisos que impulsan la toma de decisiones informadas.
+}
+\end{justify}
+\begin{center}
+\bg{cvgreen}{white}{personal} \\[0.5em]
+\end{center}
+\begin{itemize}
+    \item Fernando Ramírez
+    \item RUT:15.873.053-7
+    \item Fecha Nacimiento:19.02.1985
+    \item Nacionalidad: Chilena
+    \item Estado Civil:Casado
+\end{itemize}
+ 
+\begin{center}
+\bg{cvgreen}{white}{Areas de Especialización}\\[0.5em]
+\end{center}
+\begin{itemize}
+    \item Equipos Medico
+    \item Programacion
+    \item Data Science
+    \item Desarrollo Web
+    \item Investigación en Imágenes de Resonancia Magnetica 
+\end{itemize}
+
+\begin{center}
+\bg{cvgreen}{white}{Intereses}\\[0.5em]
+\end{center}
+\begin{itemize}
+    \item Resonancia Magnética
+    \item Programación
+    \item Tecnologías en Salud
+    \item Atletismo 
+\end{itemize}
+
+
+\begin{center}
+\bg{cvgreen}{white}{Redes Sociales} \\[0.5em]
+\end{center}
+\href{https://www.linkedin.com/in/fernando-jose-ramirez-sarmiento-846950b7}{\faLinkedinSquare \ \textbf{Presiona para acceder a LinkedIn}} \\[0.5em]
+\href{https://github.com/cenarius1985}{\faGithub \ \textbf{Presiona para acceder a GitHub}}
+
+
+}
+%-----------------------------------------------------------
+\switchcolumn
+\footnotesize
+
+\small
+\section*{Resumen}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2015--2018}{Asesor en Tecnologías de la Salud}{Valparaíso}{San Antonio \color{cvred}}{Evaluacion en adquisiciones, instalacion y procesos clinicos de equipos medicos e industriales.}{HCV_Logo.png} \\
+    \cvevent{2018--2023}{ Jefe de Mantenimiento, Proyectos y Servicios Generales.}{Valparaíso}{San Antonio \color{cvred}}{Liderar Equipo de Mantenimiento y Servicios Generales. • Administración de contratos. • Confección y desarrollo de bases técnicas y administrativas de licitación pública. • Gestionar Plan de Mantenimiento en equipos médicos e Industriales. • Programación de Costos anuales de mantenimiento. • Fiscalizar mantenimientos preventivos y correctivos}{HCV_Logo-3.png} \\
+       
+    \cvevent{2023--Actual}{Apoyo Tecnico GES}{Santiago}{Monjitas 565 \color{cvred}}{Apoyo técnico en Garantías explicitas en salud, Análisis de datos (Python, Julia, Excel, Power Bi, Talbleau), desarrollo de software Angular.}{Logo_Digera.png}
+\end{tabular}
+\vspace{1em}
+
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Grados Academicos}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{1°}{Ingeniero Civil Biomédico}{Certificado}{Universidad de Valparaíso \color{headerblue}}{}{Logo_UV.png} \\
+    \cvdegree{2°}{MBA con Especialización en Salud}{Certificado.}{Universidad Andres Bello \color{headerblue}}{}{Logo_UAB.png} \\
+    \cvdegree{3°}{Candidato PhD Ing. Informatica Aplicada}{Universidad de Valparaíso.}{Estudiante \color{headerblue}}{}{Logo_UV.png}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Programación}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{html, css} &  \barrule{0.4}{0.5em}{cvpurple}\\
+     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.55}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{Python} & \barrule{0.5}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{Julia} & \barrule{0.25}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{Typescript} &
+     \barrule{0.25}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{Data Science}&
+     \barrule{0.55}{0.5em}{cvgreen}\\
+\end{tabular}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	DATOS ACADÉMICOS
+%----------------------------------------------------------------------------------------
+
+\section*{Datos Académicos}
+\begin{itemize}
+    \item 1990-1998: Educación básica, People Help People.
+    \item 1998-2002: Educación media, Escuela Industrial de San Antonio. \\
+    \textbf{Título:} Técnico Nivel Medio en Electricidad.
+    \item 2003-2004: Escuela de Grumetes Alejandro Navarrete Cisternas.
+    \item 2004-2006: Academia Politécnica Naval, Facultad de Sanidad Naval. \\
+    \textbf{Título:} Técnico Nivel Superior en Enfermería.
+    \item 2009-2015: Universidad de Valparaíso. \\
+    \textbf{Título:} Ingeniero Civil Biomédico.
+    \item 2016-2017: Estudiante de Postgrado, MBA, Universidad Andrés Bello.
+    \item 2016: Diplomado en Diseño de Estrategias Competitivas Exitosas para Organizaciones de Salud.
+    \item 2016: Diplomado en Gestión de Organizaciones de Salud en un Entorno Competitivo.
+    \item 2016: Diplomado en Alta Dirección Estratégica de Organizaciones de Salud.
+    \item 2016: Certificado Curso Gestión de Proyectos MINSAL PMI.
+    \item 2018: Estudiante de Data Science, DataCamp.
+    \item 2018: Universidad Andrés Bello. \\
+    \textbf{Título:} MBA Especialización en Salud.
+    \item 2023: Estudiante Doctorado en Ingeniería en Informática Aplicada.
+\end{itemize}
+
+\vspace{.5em}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCIA PROFESIONAL
+%----------------------------------------------------------------------------------------
+
+\section*{Experiencia Profesional}
+\begin{itemize}
+    \item \textbf{2006-2007:} Hospital Naval Almirante Neff, Servicio Cardiología y Urología, 4 Norte.
+    \item \textbf{2007-2008:} Policlínico Naval de Villa Alemana, Servicio: Urgencias, Laboratorio, Ambulancia.
+    \item \textbf{2012:} Práctica profesional en Biorad Chile. Planificación y construcción de equipos médicos.
+    \item \textbf{2015-2018:} Profesional de apoyo en la Unidad de Proyecto Nuevo Hospital Claudio Vicuña.
+    \begin{itemize}
+        \item Apoyo técnico en equipos médicos, Corrientes débiles.
+        \item Asesor técnico en instalaciones de equipos médicos: Coordinación de equipos Médicos.
+        \item Creación de modelos de Gestión.
+        \item Planificación y evaluación de Proyectos de infraestructura y equipamiento.
+        \item Diseño de infraestructuras e instalaciones (eléctricas, sanitarias, clima, Gases clínicos) AutoCAD, Revit MEP.
+        \item Levantamiento de Proyecto Mobiliario no Clínico.
+        \item Participación en Proyecto Obras Complementarias, manejo de instalaciones de equipos industriales, manejo de instalaciones de equipos de laboratorio.
+    \end{itemize}
+    \item \textbf{2018-2023:} Jefe de Mantenimiento, Proyectos y Servicios Generales.
+    \begin{itemize}
+        \item Liderar Equipo de Mantenimiento y Servicios Generales.
+        \item Administración de contratos.
+        \item Gestionar Plan de Mantenimiento en equipos médicos e Industriales.
+        \item Fiscalizar mantenimientos preventivos y correctivos.
+        \item Confección de Planos, Especificaciones técnicas.
+        \item Análisis de datos y control de indicadores en Python, Power BI, Excel.
+        \item Entregar reportes de avances en diferentes áreas.
+        \item Conocimiento en IEC 60601, IEC 62353, seguridad electromedica.
+    \end{itemize}
+    \item \textbf{Enero 2023 en Adelante:} Apoyo Tecnico GES. Apoyo técnico en Garantías explicitas en salud, Análisis de datos (Python, Julia, Excel, Power Bi, Tableau), desarrollo de software, automatización de procesos con playwright, langchain en python .
+\end{itemize}
+
+\vspace{.5em}
+
+%----------------------------------------------------------------------------------------
+%	INFORMÁTICA
+%----------------------------------------------------------------------------------------
+
+\section*{Informática}
+\begin{itemize}
+    \item Windows, Word, Excel: Nivel avanzado.
+    \item Herramientas Google: Forms, Docs, Sheets, Drawings, Gmail, Calendario, Drive.
+    \item Herramientas de Gestión: Project, Visio, Bizagi Modeler: Nivel avanzado.
+    \item Programación: Matlab,Julia, Python: Nivel avanzado.
+    \item Diseño gráfico: Autodesk Inventor (Avanzado), AutoCAD (Avanzado), Revit MEP (Intermedio), Sweet Home 3D (Avanzado).
+    \item Desarrollo de software: django, django rest framework, Angular dev, google platform, parse server, typescript, nodejs, bases de datos relacionales y no relaciones, implementación en aplicaciones reales productivas. 
+    \item Estadística:Análisis de componentes independientes (ICA), Análisis de correlación, Análisis de componentes Principales (PCA), Regresión lineal, Análisis descriptivo, Regresión lineal, logística y pronósticos de datos.
+    \item Data Science: Nivel avanzado.
+\end{itemize}
+
+\vspace{.5em}
+
+%----------------------------------------------------------------------------------------
+%	IDIOMAS
+%----------------------------------------------------------------------------------------
+
+\section*{Idiomas}
+\begin{itemize}
+    \item Inglés: Nivel Intermedio.
+\end{itemize}
+
+\vspace{1em}
+
+%----------------------------------------------------------------------------------------
+%	REFERENCIAS
+%----------------------------------------------------------------------------------------
+
+\section*{Referencias}
+\begin{itemize}
+    \item Hospital Claudio Vicuña: Subdirector Administrativo Sr. Javier Rojas. \\
+    \textbf{Teléfono:} +56 9 78870555.
+\end{itemize}
+
+\vspace{1em}
+
+\noindent \textbf{Disponibilidad:} Inmediata.
+
+
+\end{paracol}
+
+\end{document}
